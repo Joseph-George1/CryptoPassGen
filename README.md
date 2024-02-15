@@ -1,7 +1,7 @@
 
 # Password Generator
 
-This is a simple Python script that generates random passwords and stores them securely in a hidden file. It allows you to create strong passwords with customizable lengths and includes alphabets (both uppercase and lowercase), numbers, and special characters.
+This is a simple Python script that generates random passwords and stores them securely in a hidden file. It allows you to create strong passwords with customizable lengths and includes alphabets (both uppercase and lowercase), numbers, and special characters for Windows.
 
 ## Features
 
