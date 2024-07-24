@@ -7,7 +7,7 @@ This is a simple Python script that generates random passwords and stores them s
 
 - Generates random passwords with customizable lengths.
 - Includes alphabets (uppercase and lowercase), numbers, and special characters for increased security.
-- Stores generated passwords securely in a hidden file named `passwords.txt`.
+- Stores generated passwords securely in a hidden file named `passwords.txt` in the home directory.
 - Allows easy retrieval of generated passwords.
 
 ## Prerequisites
