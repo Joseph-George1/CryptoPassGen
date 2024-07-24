@@ -4,6 +4,7 @@ import string
 import random
 from datetime import datetime
 import os
+import platform
 
 def submitt():
     length = password_length.get()
@@ -80,12 +81,20 @@ def copy_output():
 def save_output():
     password = output_label.get(1.0, tk.END).strip()
     if password:
-        file_path = "Password.txt"
         app_name = user_input.get()
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        if not os.path.exists(file_path):
-            with open(file_path, "w") as f:
-                f.write("Password File Created\n")
+        home_dir = os.path.expanduser("~")
+        if platform.system() == "Windows":
+            file_path = os.path.join(home_dir, "Password.txt")
+            if not os.path.exists(file_path):
+                with open(file_path, "w") as f:
+                    f.write("Password File Created\n")
+                os.system(f'attrib +h "{file_path}"')
+        else:
+            file_path = os.path.join(home_dir, ".Password.txt")
+            if not os.path.exists(file_path):
+                with open(file_path, "w") as f:
+                    f.write("Password File Created\n")
         with open(file_path, "a") as f:
             f.write(f"New password: {password} - Created on: {timestamp} - For {app_name}\n")
     else:
