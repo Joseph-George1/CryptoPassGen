@@ -33,10 +33,13 @@ This is a simple Python script that generates random passwords and stores them s
     ```
     python password_generator.py
     ```
+4. For the GUI Version:
+   ```
+   python Password_Gen_Gui.py
+   ```
+6. Follow the prompt to enter the desired length of the password.
 
-4. Follow the prompt to enter the desired length of the password.
-
-5. The generated password will be displayed on the terminal. Additionally, it will be appended to the `passwords.txt` file, which is hidden for added security.
+7. The generated password will be displayed on the terminal. Additionally, it will be appended to the `passwords.txt` file, which is hidden for added security.
 
 ## Contributing
 
